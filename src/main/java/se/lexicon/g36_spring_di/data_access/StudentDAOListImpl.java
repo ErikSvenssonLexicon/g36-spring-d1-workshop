@@ -42,5 +42,9 @@ public class StudentDAOListImpl implements StudentDAO{
 	public void delete(int id) {
 		Optional.ofNullable(find(id)).ifPresent(students::remove);		
 	}
+	
+	public void clear() {
+		students.clear();		
+	}
 
 }
