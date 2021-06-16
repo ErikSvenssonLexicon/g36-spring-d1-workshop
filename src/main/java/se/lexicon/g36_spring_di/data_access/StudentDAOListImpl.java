@@ -11,9 +11,7 @@ import se.lexicon.g36_spring_di.models.Student;
 @Component
 public class StudentDAOListImpl implements StudentDAO{
 	
-	private List<Student> students;
-	
-	
+	private final List<Student> students;	
 
 	public StudentDAOListImpl() {
 		students = new ArrayList<>();
